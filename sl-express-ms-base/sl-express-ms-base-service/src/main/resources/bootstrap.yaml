@@ -1,0 +1,22 @@
+application:
+  version: v1.0
+spring:
+  application:
+    name: sl-express-ms-base
+  profiles:
+    active: local
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+sl:
+  mq:
+    enable: true
+  swagger:
+    package-path: com.sl.ms.base.controller
+    title: 神领物流 - 基础微服务接口文档
+    description: 该微服务完成车辆、省市区等基础数据的管理。
+    contact-name: 传智教育·研究院
+    contact-url: http://www.itcast.cn/
+    contact-email: yjy@itcast.cn
+    version: ${application.version}
+
